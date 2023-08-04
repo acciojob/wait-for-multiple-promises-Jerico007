@@ -9,7 +9,7 @@ let tableColumn = document.createElement("td");
 tableColumn.colSpan = 2;
 
 tableColumn.innerText = "Loading...";
-
+tableColumn.id = "Loading";
 tableRow.appendChild(tableColumn);
 
 output.appendChild(tableRow);
