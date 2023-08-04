@@ -4,10 +4,11 @@ let output = document.getElementById("output");
 //Creating a default table with Loading...
 let tableRow = document.createElement("tr");
 tableRow.id = "loading";
-tableRow.colSpan = 2;
+let tableCol = document.createElement("td");
+tableCol.colSpan = 2;
 
-tableRow.innerText = "Loading...";
-
+tableCol.innerText = "Loading...";
+ tableRow.appendChild(tableCol);
 
 output.appendChild(tableRow);
 
