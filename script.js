@@ -3,13 +3,13 @@ let output = document.getElementById("output");
 
 //Creating a default table with Loading...
 let tableRow = document.createElement("tr");
+tableRow.id = "Loading";
 
 let tableColumn = document.createElement("td");
 
 tableColumn.colSpan = 2;
 
 tableColumn.innerText = "Loading...";
-tableColumn.id = "Loading";
 tableRow.appendChild(tableColumn);
 
 output.appendChild(tableRow);
