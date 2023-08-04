@@ -3,7 +3,7 @@ let output = document.getElementById("output");
 
 //Creating a default table with Loading...
 let tableRow = document.createElement("tr");
-tableRow.id = "Loading";
+tableRow.id = "loading";
 tableRow.colSpan = 2;
 
 tableRow.innerText = "Loading...";
