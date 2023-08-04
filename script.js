@@ -35,8 +35,10 @@ let prom3 = new Promise((resolve) => {
   }, time);
 });
 
+//Getting all resolved promises
 let x = Promise.all([prom1, prom2, prom3]);
 
+//Add resolved promises data into the table
 x.then((data) => {
   output.removeChild(tableRow);
   data.forEach((val) => {
